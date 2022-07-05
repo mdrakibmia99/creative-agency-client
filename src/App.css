@@ -204,3 +204,7 @@ textarea {
   margin-top: 10%;
   background-color: black;
 }
+/* menu bar */
+#menubar {
+  display: none;
+}
