@@ -72,3 +72,28 @@ a {
 #authenticate-btn:hover a {
   color: black;
 }
+
+/* banner section */
+#banner-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 23px;
+}
+
+#banner-desc {
+  margin-bottom: 23px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#banner-section {
+  margin-top: 5%;
+}
+
+#banner-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-position: bottom;
+}
