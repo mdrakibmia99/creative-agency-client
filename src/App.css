@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --transition-delay: all .5s linear;
+  --primary-color: #FBD062;
+  --default-radius: 5px;
+  --focus-words: #7AB259;
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
