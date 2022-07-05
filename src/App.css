@@ -199,3 +199,8 @@ textarea {
   transform: scale(1.1);
   box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
 }
+/* slider section */
+#slider-section {
+  margin-top: 10%;
+  background-color: black;
+}
