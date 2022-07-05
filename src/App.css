@@ -144,3 +144,12 @@ textarea {
   border-color: transparent;
   box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
 }
+/* landing page section */
+#landing-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  padding-bottom: 10%;
+  margin-top: -4.5rem;
+  padding-top: 10rem !important;
+}
