@@ -129,3 +129,18 @@ textarea {
 textarea {
   height: 277px;
 }
+
+/* feedback section */
+#feedback-section {
+  margin-top: 10%;
+}
+
+.feedback-card {
+  transition: var(--transition-delay);
+}
+
+.feedback-card:hover {
+  border-width: 1px;
+  border-color: transparent;
+  box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+}
