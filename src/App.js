@@ -5,7 +5,9 @@ import './App.css';
 function App() {
   return (
     <div>
-       hlw
+         <Routes>
+        <Route path='/' element={<Landing />} />
+      </Routes>
     </div>
   );
 }
