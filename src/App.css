@@ -158,3 +158,13 @@ textarea {
     margin-top: 0;
   }
 }
+/* partners section */
+#partners-section div img {
+  object-fit: cover;
+  width: 70%;
+  transition: var(--transition-delay);
+}
+
+#partners-section div img:hover {
+  transform: scale(1.5);
+}
