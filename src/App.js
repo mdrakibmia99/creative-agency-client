@@ -1,12 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-
+import Admin from './components/routes/Admin/Admin';
+import Login from './components/routes/Authenticate/Login';
+import Customer from './components/routes/Customer/Customer';
+import Landing from './components/routes/Home/Landing';
 
 
 function App() {
   return (
     <div>
-         <Routes>
+        <Routes>
         <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Landing />} />
+        <Route path='/admin' element={<Admin />} />
+        <Route path='/customer' element={<Customer />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='*' element={<Landing />} />
       </Routes>
     </div>
   );
