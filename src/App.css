@@ -25,3 +25,50 @@ a {
   color: black;
   text-decoration: none;
 }
+
+/* Header section */
+#header-section {
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+#header-logo img {
+  height: 47px;
+  width: 150px;
+  object-fit: cover;
+}
+
+#header-items {
+  gap: 1rem;
+}
+
+.header-item {
+  transition: var(--transition-delay);
+}
+
+.header-item:hover {
+  color: white;
+}
+
+#authenticate-btn {
+  height: 45px;
+  width: 134px;
+  border-radius: var(--default-radius);
+  transition: var(--transition-delay);
+}
+
+#authenticate-btn a {
+  color: white;
+}
+
+#authenticate-btn:hover {
+  background-color: white;
+}
+
+#authenticate-btn:hover a {
+  color: black;
+}
