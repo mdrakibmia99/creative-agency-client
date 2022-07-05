@@ -208,3 +208,15 @@ textarea {
 #menubar {
   display: none;
 }
+@media only screen and (max-width: 1024px) {
+  #menubar {
+    display: inline-block;
+  }
+
+  #header-items {
+    display: none !important;
+  }
+  .header-item:hover {
+    color: var(--primary-color);
+  }
+}
