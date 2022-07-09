@@ -1,4 +1,4 @@
-# Creative Agency Client-Side
+# Creative Agency 
 
 ## Technologies used here
 * react.js
