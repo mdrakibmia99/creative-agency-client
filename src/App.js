@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddService from './components/routes/Admin/AddService';
 import Admin from './components/routes/Admin/Admin';
+import MakeAdmin from './components/routes/Admin/MakeAdmin';
 import ServiceList from './components/routes/Admin/ServiceList';
 import Login from './components/routes/Authenticate/Login';
 import Register from './components/routes/Authenticate/Register';
@@ -29,6 +30,7 @@ function App() {
         <Route path='/admin' element={<RequireAuth><Admin /></RequireAuth>}>
           <Route index element={<ServiceList />} />
           <Route path='addService' element={<AddService />} />
+          <Route path='makeAdmin' element={<MakeAdmin />} />
           
         </Route>
         <Route path='/login' element={<Login />} />
