@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddService from './components/routes/Admin/AddService';
 import Admin from './components/routes/Admin/Admin';
 import ServiceList from './components/routes/Admin/ServiceList';
 import Login from './components/routes/Authenticate/Login';
@@ -27,7 +28,7 @@ function App() {
        
         <Route path='/admin' element={<RequireAuth><Admin /></RequireAuth>}>
           <Route index element={<ServiceList />} />
-          
+          <Route path='addService' element={<AddService />} />
           
         </Route>
         <Route path='/login' element={<Login />} />
