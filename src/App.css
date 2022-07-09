@@ -348,3 +348,23 @@ input[type=file] {
     width: 100% !important;
   }
 }
+
+
+/* service card section */
+#service-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #service-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #service-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
