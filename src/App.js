@@ -6,6 +6,7 @@ import Register from './components/routes/Authenticate/Register';
 import RequireAuth from './components/routes/Authenticate/RequireAuth';
 import Customer from './components/routes/Customer/Customer';
 import Order from './components/routes/Customer/Order';
+import Review from './components/routes/Customer/Review';
 import ShowServices from './components/routes/Customer/ShowServices';
 import Landing from './components/routes/Home/Landing';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/customer' element={<RequireAuth><Customer /></RequireAuth>}>
           <Route index element={<Order />} />
           <Route path='showServices' element={<ShowServices />} />
+          <Route path='review' element={<Review />} />
         </Route>
        
 
