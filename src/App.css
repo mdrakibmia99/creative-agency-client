@@ -285,3 +285,66 @@ textarea {
     margin-left: -250px;
   }
 }
+
+/* sidebar button */
+#sidebar-btn {
+  top: 5em;
+  left: 1em;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 3px rgba(176, 171, 171, 0.75);
+}
+
+@media only screen and (max-width: 1024px) {
+  #sidebar-btn {
+    top: 11em;
+    left: 1em;
+  }
+}
+
+/* description input box */
+.description-box {
+  height: 112px;
+}
+
+input[type=file] {
+  color: transparent !important;
+  width: 100%;
+}
+
+#icon {
+  background-color: #DEFFED;
+  color: #009444;
+  border: 1px solid #009444;
+}
+
+::-webkit-file-upload-button {
+  background-color: transparent;
+  border: none;
+  color: transparent !important;
+  width: 100%;
+  height: 100%;
+}
+
+#group-input {
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #group-input {
+    gap: 0;
+  }
+}
+
+.dashboard-section {
+  background-color: #f4f7fc;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  #make-admin-input {
+    width: 100% !important;
+  }
+}
