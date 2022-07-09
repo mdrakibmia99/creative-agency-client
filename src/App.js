@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Admin from './components/routes/Admin/Admin';
+import ServiceList from './components/routes/Admin/ServiceList';
 import Login from './components/routes/Authenticate/Login';
 import Register from './components/routes/Authenticate/Register';
 import RequireAuth from './components/routes/Authenticate/RequireAuth';
@@ -24,7 +25,11 @@ function App() {
           <Route path='review' element={<Review />} />
         </Route>
        
-
+        <Route path='/admin' element={<RequireAuth><Admin /></RequireAuth>}>
+          <Route index element={<ServiceList />} />
+          
+          
+        </Route>
         <Route path='/login' element={<Login />} />
         <Route path='register' element={<Register/>}></Route>
         <Route path='*' element={<Landing />} />
