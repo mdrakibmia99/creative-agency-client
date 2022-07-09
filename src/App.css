@@ -368,3 +368,14 @@ input[type=file] {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+/* email selector */
+#mail-selector, #service_selector {
+  transition: var(--transition-delay);
+  cursor: pointer;
+}
+
+#mail-selector:hover, #service_selector:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
