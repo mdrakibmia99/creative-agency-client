@@ -1,8 +1,8 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logos/logo.png';
-import auth from '../../firebase.init';
+import logo from '../../../assets/logos/logo.png';
+import auth from '../../../firebase.init';
 import Loading from './Loading';
 
 const Panel = ({ title }) => {
