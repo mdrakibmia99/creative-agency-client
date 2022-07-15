@@ -67,6 +67,7 @@ a {
 
 #authenticate-btn:hover {
   background-color: white;
+  color:#000000
 }
 
 #authenticate-btn:hover a {
@@ -239,7 +240,7 @@ textarea {
   grid-area: 1/1;
 }
 
-.green {
+.black {
   background-color: rgba(11, 11, 11, 0.7);
   animation: move-right 2s linear infinite
 }

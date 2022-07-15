@@ -10,7 +10,7 @@ function useAuthenticate(user) {
         if (email) {
             const name = user?.user?.displayName;
 
-            const { data } = axios.put(`http://localhost:5000//user/${email}`, { name, email });
+            const { data } = axios.put(`http://localhost:5000/user/${email}`, { name, email });
             console.log(data);
 
             if (name) {

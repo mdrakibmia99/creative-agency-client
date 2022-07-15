@@ -11,10 +11,10 @@ import Loading from './Loading';
 const Header = () => {
     const [showMenu, setShowMenu] = useState(true);
     const [user, loading] = useAuthState(auth);
+    const { data: userRole,isLoading } = useQuery('userRole', () => fetch(`http://localhost:5000/user/${user?.email}`).then(res => res.json()));
 
-    const { data: userRole, isLoading } = useQuery('userRole', () => fetch(`http://localhost:5000/user/${user?.email}`).then(res => res.json()));
-
-    if (isLoading || loading) {
+    
+    if ( loading || isLoading) {
         return <Loading />
     }
     console.log(userRole?.role);
@@ -64,7 +64,7 @@ const Header = () => {
                                 Dashboard
                             </Link>
                         }
-                        <button id='authenticate-btn' className={`btn ${user ? 'btn-success' : 'btn-dark'}`}>
+                        <button id='authenticate-btn' className={`btn  ${user ? 'btn-dark' : 'btn-dark'}`}>
                             {
                                 user
                                     ?
