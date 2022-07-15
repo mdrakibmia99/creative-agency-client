@@ -34,7 +34,7 @@ const Order = () => {
         console.log(response);
 
         if (response?.success) {
-            const { data } = await axios.post('http://localhost:5000/order', {
+            const { data } = await axios.post('https://creative-agency-rk.herokuapp.com/order', {
                 name: customerName,
                 email: customerEmail,
                 course: courseName,
@@ -51,7 +51,7 @@ const Order = () => {
 
     };
 
-    const { data: courses, isLoading } = useQuery('courses', () => fetch('http://localhost:5000/courses').then(res => res.json()));
+    const { data: courses, isLoading } = useQuery('courses', () => fetch('https://creative-agency-rk.herokuapp.com/courses').then(res => res.json()));
 
     if (loading || isLoading) {
         return <Loading />

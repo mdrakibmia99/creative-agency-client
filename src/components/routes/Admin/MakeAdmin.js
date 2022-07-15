@@ -11,14 +11,14 @@ const MakeAdmin = () => {
         event.preventDefault();
 
         const customerEmail = email;
-        const { data } = await axios.put(`http://localhost:5000/email/${customerEmail}`, { role: 'admin' });
+        const { data } = await axios.put(`https://creative-agency-rk.herokuapp.com/email/${customerEmail}`, { role: 'admin' });
 
         if (data?.modifiedCount !== 0) {
             setEmail('');
         }
     };
 
-    const { data: emails, isLoading, refetch } = useQuery('emails', () => fetch('http://localhost:5000/emails').then(res => res.json()));
+    const { data: emails, isLoading, refetch } = useQuery('emails', () => fetch('https://creative-agency-rk.herokuapp.com/emails').then(res => res.json()));
 
     if (isLoading) {
         return <Loading />
