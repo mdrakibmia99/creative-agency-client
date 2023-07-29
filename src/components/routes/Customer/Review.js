@@ -19,7 +19,7 @@ const Review = () => {
             message: reviewerMessage
         };
 
-        const { data } = await axios.put(`https://creative-agency-rk.herokuapp.com/review/${reviewerEmail}`, review);
+        const { data } = await axios.put(`https://creative-agency-server-rakib.onrender.com/review/${reviewerEmail}`, review);
 
         if(data?.acknowledged){
             event.target.reset();

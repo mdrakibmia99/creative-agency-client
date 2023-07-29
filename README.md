@@ -1,7 +1,7 @@
 # Creative Agency Client
  * `Client Site Live Link:` [Click Here](https://creative-agency-233d6.web.app/)
  * `Client Site Repo Link:` [Click Here](https://github.com/mdrakibmia99/creative-agency-client)
- * `Server Site Live Link:` [Click Here](https://creative-agency-rk.herokuapp.com/)
+ * `Server Site Live Link:` [Click Here](https://creative-agency-server-rakib.onrender.com/)
  * `Server Site Repo Link:` [Click Here](https://github.com/mdrakibmia99/creative-agency-server)
 # Features
 

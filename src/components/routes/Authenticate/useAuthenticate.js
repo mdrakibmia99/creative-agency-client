@@ -10,7 +10,7 @@ function useAuthenticate(user) {
         if (email) {
             const name = user?.user?.displayName;
 
-            const { data } = axios.put(`https://creative-agency-rk.herokuapp.com/user/${email}`, { name, email });
+            const { data } = axios.put(`https://creative-agency-server-rakib.onrender.com/user/${email}`, { name, email });
             console.log(data);
 
             if (name) {

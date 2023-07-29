@@ -11,7 +11,7 @@ import Loading from './Loading';
 const Header = () => {
     const [showMenu, setShowMenu] = useState(true);
     const [user, loading] = useAuthState(auth);
-    const { data: userRole,isLoading } = useQuery('userRole', () => fetch(`https://creative-agency-rk.herokuapp.com/user/${user?.email}`).then(res => res.json()));
+    const { data: userRole,isLoading } = useQuery('userRole', () => fetch(`https://creative-agency-server-rakib.onrender.com/user/${user?.email}`).then(res => res.json()));
 
     
     if ( loading || isLoading) {

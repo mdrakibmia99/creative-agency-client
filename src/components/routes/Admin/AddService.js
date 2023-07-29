@@ -22,7 +22,7 @@ const AddService = () => {
         console.log(response);
 
         if (response?.success) {
-            const { data } = await axios.post('https://creative-agency-rk.herokuapp.com/service', {
+            const { data } = await axios.post('https://creative-agency-server-rakib.onrender.com/service', {
                 name: serviceName,
                 description: serviceDetail,
                 icon: response?.data?.url,

@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 
 const ShowServices = () => {
     const [collapse, setCollapse] = useState(false);
-    const { data: orders, isLoading } = useQuery('orders', () => fetch('https://creative-agency-rk.herokuapp.com/orders').then(res => res.json()));
+    const { data: orders, isLoading } = useQuery('orders', () => fetch('https://creative-agency-server-rakib.onrender.com/orders').then(res => res.json()));
 
     if (isLoading) {
         return <Loading />
